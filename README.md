@@ -1,62 +1,65 @@
-# 🤖 MedAssist Pro – AI Healthcare Service Agent
+# 🏥 MedAssist Pro SAVE
 
-## Overview
+> **Enterprise AI Healthcare Service Agent built with Salesforce Agentforce**
 
-MedAssist Pro is an AI-powered healthcare customer service agent developed on Salesforce Agentforce.
-
-The solution assists patients with administrative healthcare requests while keeping a human-in-the-loop approach for sensitive cases.
+![Architecture](./diagrams/architecture.jpeg)
 
 ---
 
-## Features
+## 🚀 Executive Summary
 
-- Patient Identity Verification
-- Medical Records Requests
-- Billing Support
-- Level 2 Escalations
-- Emergency Detection
-- Knowledge-Based Responses
-- AI Prompt Engineering
-- Retrieval Augmented Generation (RAG)
+MedAssist Pro SAVE is an enterprise AI healthcare service agent designed to automate administrative healthcare processes using Salesforce Agentforce.
+
+The solution combines conversational AI, Retrieval-Augmented Generation (RAG), Salesforce Knowledge, Flow Builder, Apex automation, and external AI services to support healthcare personnel while maintaining a Human-in-the-Loop approach for critical scenarios.
+
+Developed as part of the **HealthCare Connect AI Hackathon**, the project demonstrates how enterprise AI can improve operational efficiency, reduce response times, and enhance patient experience through intelligent automation.
 
 ---
 
-## Technologies
+## ✨ Key Features
 
-- Salesforce Agentforce
-- Apex
-- Flow Builder
-- Lightning Knowledge
-- Prompt Builder
-- Microsoft Copilot Studio
-- REST APIs
-- Generative AI
-
----
-
-## Architecture
-
-The agent follows a Retrieval-Augmented Generation (RAG) architecture:
-
-Patient → Agentforce → Knowledge Base → Prompt Builder → AI Response
-
-Sensitive requests are escalated to a human support team.
+- ✅ Intelligent Case Classification
+- ✅ Patient Identity Verification
+- ✅ Knowledge RAG
+- ✅ Billing Resolution
+- ✅ Medical Record Management
+- ✅ Appointment Scheduling
+- ✅ AI Medical Image Analysis
+- ✅ Human-in-the-Loop Escalation
+- ✅ Event Logging
+- ✅ Satisfaction Surveys
 
 ---
 
-## Skills Demonstrated
+## 🏗️ Solution Architecture
 
-- AI Agent Design
-- Prompt Engineering
-- Conversational AI
-- Salesforce Development
-- Flow Automation
-- Knowledge Management
-- Human-in-the-Loop AI
-- Solution Architecture
+The platform integrates Salesforce Service Cloud, Agentforce, Knowledge RAG, Flow Builder, Apex, Data Cloud and an external AI service for medical image analysis.
 
----
+The architecture follows this enterprise workflow:
 
-## Status
-
-🚧 Currently under continuous improvement.
+```text
+Patient
+      │
+      ▼
+Agentforce Service Agent
+      │
+      ▼
+Knowledge Retrieval (RAG)
+      │
+      ▼
+Salesforce Knowledge
+      │
+      ▼
+Flow Builder Automation
+      │
+      ▼
+Salesforce Case Management
+      │
+      ├────────► External AI (FastAPI + CNN)
+      │
+      ▼
+Human Escalation
+      │
+      ▼
+Audit & Event Logging
+```
